@@ -46,8 +46,6 @@ class User{
 
     public function db_column(){
         
-         
-
             $rs = $this->conn->run('SELECT * FROM users LIMIT 0');
             for ($i = 0; $i < $rs->columnCount(); $i++):
                 $col = $rs->getColumnMeta($i);
